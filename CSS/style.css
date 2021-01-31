@@ -1,0 +1,339 @@
+/* Tesla Mockup - Author: Ayelet Danieli */
+:root {
+  --text-color-inverted: white;
+  --text-color-regualr: black;
+  --size--3x: 24px;
+}
+
+@font-face {
+  font-family: "Gotham Medium";
+  src: url("/Fonts/GothamMedium.ttf") format("truetype");
+  }
+@font-face {
+   font-family: "Gotham Book";
+    src: url('/Fonts/GothamBook.ttf') format("truetype");
+  }
+@font-face {
+   font-family: "Gotham Light";
+    src: url('/Fonts/GothamLight.ttf') format("truetype");
+  }
+  
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.clr {
+  clear: both;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.logo-inverted {
+  background-image: url("/img/tesla-9.svg");
+}
+
+.color-invert {
+  filter: invert(100%) sepia(0%) saturate(7499%) hue-rotate(170deg)
+    brightness(100%) contrast(100%);
+}
+
+body {
+  font-family: "Gotham Medium";
+  font-weight: 400;
+  color: white;
+  font-size: 14px;
+}
+
+h1 {
+  text-align: center;
+  margin: auto 0;
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.header-1 {
+    font-family: "Gotham Medium";
+    font-size: 28px;
+}
+.header-2 {
+    font-size: 17px;
+    font-weight: 500;
+    font-family: "Gotham Light";
+    line-height: 1em;
+}
+
+.header-4 {
+    font-size: 40px;
+}
+
+.ordernow-btn {
+    height: 40px;
+    width: 150px;
+    border: 3px solid black;
+    font-size: 12px;
+    line-height: 1.1em;
+    padding: 10px 40px;
+    margin: 10px;
+    border-radius: 50px;
+    display: block;
+    cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;
+    white-space: nowrap;
+    background: transparent;
+}
+
+ordernow-btn:hover {
+    background: black;
+    color: white;
+}
+
+.page-wrapper {
+  background: url("/img/model-3-hero-desktop.jfif");
+  height: calc(100vh - var(--size--3x));
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* height: 100vh; */
+}
+
+.menu-nav-wrapper a img {
+  width: 30%;
+}
+
+.logo-image-container {
+  margin: auto;
+    position: fixed;
+    top: 0;
+}
+
+.fixed-sidebar {
+    position: fixed;
+    left: 20px;
+    top: 50px;
+}
+
+.sidebar-list-item {
+    border-left: 1px solid gray;
+    list-style: none;
+   margin-top: 3px;
+    font-family: "Gotham Book";
+    font-size: 14px;
+    line-height: 1.5em;
+}
+
+.sidebar-list-item a {
+    color: #393c41;
+    text-decoration: none;
+    padding-left: 3px;
+}
+
+.sidebar-list-item a:hover,
+.sidebar-list-item a.current
+ {
+    color: white;
+}
+
+.menu-nav-wrapper h2 {
+  /* border: 1px solid yellow; */
+  float: left;
+  width: 300px;
+  margin: 20px;
+}
+/* main-nav-container  */
+.menu-nav-wrapper {
+  overflow: auto;
+  text-transform: uppercase;
+  margin: auto;
+  color: var(--text-color-inverted);
+}
+
+nav {
+  margin: auto;
+  height: 100%;
+}
+
+.main-nav-list {
+  margin: auto;
+  float: left;
+  list-style: none;
+  text-align: center;
+}
+
+.main-nav-list ul {
+  margin: auto;
+  float: left;
+  display: inline;
+}
+
+.main-nav-list a {
+  text-decoration: none;
+  display: block;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: var(--text-color-inverted);
+  font-weight: 400;
+  line-height: 1.2em;
+}
+
+.main-nav-center {
+  display: inline;
+  margin: 20px 0;
+  float: left;
+  height: 200;
+}
+
+.main-nav-right {
+  float: right;
+  margin: 20px 0;
+  display: inline;
+}
+
+.main-nav-center ul {
+  float: left;
+}
+
+.main-nav-center li {
+  float: left;
+}
+
+.main-nav-right li {
+  float: right;
+}
+
+.main {
+  height: 100vh;
+}
+/* //////////////////////////////////////////////////////////// */
+.section1 {
+  background-color: transparent;
+  /* background: url('/img/model-3-hero-desktop.jfif') no-repeat center center/cover; */
+
+  height: 100vh;
+  position: relative;
+}
+
+.hero-title {
+  height: 50vh;
+}
+
+.hero-content p {
+  text-align: center;
+}
+.hero-arrow {
+  text-align: center;
+  width: 100%;
+  margin-top: 10px;
+}
+.hero-arrow-down {
+  height: 36px;
+  display: block;
+  margin: 0 auto;
+  z-index: 20;
+  /* position: relative; */
+}
+
+.callout {
+  transition-delay: 0.2s;
+  transition-property: opacity;
+  transition-duration: 0.5s;
+  width: 100px;
+  height:100px;
+  background: #393c41;
+  float: left;
+  margin: auto:
+}
+.callout-divider-line {
+  border-left: 1px solid white;
+}
+
+.callout h3 {
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 1.2em;
+  text-align: center;
+  width: 50%;
+}
+.callout p {
+  font-size: 12px;
+  line-height: 1.5em;
+}
+.callout-speed {
+  transition-delay: 0.2s;
+}
+/* //////////////////////////////////////////////////////////////// */
+.section-model3-safety {
+  /* background-color: aqua; */
+  height: 100vh;
+}
+
+.safety-content {
+  width: 30%;
+  height: 100vh;
+  background: gray;
+  float: left;
+  border: 1px solid black;
+  /* position: relative; */
+  /* z-index: 100; */
+}
+
+.safety-image {
+  width: 70%;
+  height: 100vh;
+  background: url('/img/model_3_safety_hero.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* border: 1px solid black; */
+  float: right;
+  /* position: relative; */
+  /* z-index: 40; */
+}
+/* /////////////////////////////////////////////////////////////////////////////////// */
+.section-model3-performance {
+  height: 100vh;
+}
+
+.section-model3-performance .img-container {
+    height: 50%;
+    background: url('/img/lhd-performance-hero-desktop.jfif');
+    /* background: red; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    /* margin: 10px; */
+}
+
+.section-model3-performance .content-container {
+    height: 50%;
+    border: 1px solid black;
+    margin: auto;
+    color: black;
+    padding: 48px 20px 64px 0;
+}
+
+.section-model3-performance .content-container .performance-header {
+    margin: auto;
+    /* float: left; */
+    width: 50%;
+    /* color: wheat; */
+    display: inline-block;
+}
+.desc-text {
+    font-size: 14px;
+    font-family: "Gotham Book";
+    line-height: 1.5em;
+}
+
+.section-model3-performance .content-container .performance-text {
+    float: left;
+    width: 50%;
+    margin: auto;
+    padding: 48px 0 64px 0;
+}
+
